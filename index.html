@@ -3,76 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to CarClicker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        main {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #777;
-        }
-        .game-icon {
-            width: 600px; /* Set the width of the icon */
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
-            overflow: hidden; /* Hide overflow to prevent image spill */
-            margin: 0 auto; /* Center the icon */
-        }
-        .game-icon img {
-            width: 100%; /* Make the image responsive */
-            height: auto; /* Maintain aspect ratio */
-            max-height: 100%; /* Ensure it doesn't exceed the container height */
-            object-fit: cover; /* Crop image to cover the area */
-            border-radius: 10px 10px 0 0; /* Rounded top corners */
-        }
-        .play-text {
-            margin: 10px 0;
-            font-size: 20px; /* Adjust font size */
-            color: #333;
-        }
-        .game-icon:hover {
-            transform: translateY(-10px); /* Move the icon up on hover */
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-        }
-    </style>
+    <title>Pac-Man Game</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Make sure paths are correct -->
 </head>
 <body>
-
-<header>
-    <h1>Welcome to My Website</h1>
-</header>
-
-<main>
-    <!-- Game Icon Section -->
-    <div class="game-icon">
-        <img src="cc.jpg" alt="Game Icon"> <!-- Ensure your image path is correct -->
-        <div class="play-text">Play Now</div>
-    </div>
-</main>
-
-<footer>
-    <p>&copy; 2024 My Website</p>
-</footer>
-
+    <canvas id="canvas" width="960" height="640"></canvas>
+    <script src="game.js"></script> <!-- Make sure paths are correct -->
 </body>
 </html>
