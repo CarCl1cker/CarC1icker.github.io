@@ -30,7 +30,6 @@
         }
         .game-icon {
             width: 600px; /* Set the width of the icon */
-            height: 600px; /* Set the height of the icon */
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -41,7 +40,8 @@
         }
         .game-icon img {
             width: 100%; /* Make the image responsive */
-            height: 70%; /* Set height for the image */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 100%; /* Ensure it doesn't exceed the container height */
             object-fit: cover; /* Crop image to cover the area */
             border-radius: 10px 10px 0 0; /* Rounded top corners */
         }
@@ -62,10 +62,10 @@
     <h1>Welcome to My Website</h1>
 </header>
 
-
+<main>
     <!-- Game Icon Section -->
     <div class="game-icon">
-        <img src="cc.jpg" alt="Game Icon"> <!-- Replace with your image URL -->
+        <img src="cc.jpg" alt="Game Icon"> <!-- Ensure your image path is correct -->
         <div class="play-text">Play Now</div>
     </div>
 </main>
