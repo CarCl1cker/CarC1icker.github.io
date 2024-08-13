@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic HTML Page</title>
+    <title>Welcome to CarClicker</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,6 +28,32 @@
             margin-top: 20px;
             color: #777;
         }
+        .game-icon {
+            width: 600px; /* Set the width of the icon */
+            height: 600px; /* Set the height of the icon */
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+            overflow: hidden; /* Hide overflow to prevent image spill */
+            margin: 0 auto; /* Center the icon */
+        }
+        .game-icon img {
+            width: 100%; /* Make the image responsive */
+            height: 70%; /* Set height for the image */
+            object-fit: cover; /* Crop image to cover the area */
+            border-radius: 10px 10px 0 0; /* Rounded top corners */
+        }
+        .play-text {
+            margin: 10px 0;
+            font-size: 20px; /* Adjust font size */
+            color: #333;
+        }
+        .game-icon:hover {
+            transform: translateY(-10px); /* Move the icon up on hover */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+        }
     </style>
 </head>
 <body>
@@ -36,16 +62,12 @@
     <h1>Welcome to My Website</h1>
 </header>
 
-<main>
-    <h2>About This Page</h2>
-    <p>This is a basic HTML page structure. You can customize it by adding your own content, styles, and scripts.</p>
 
-    <h3>Features:</h3>
-    <ul>
-        <li>Header with title</li>
-        <li>Main content area</li>
-        <li>Footer</li>
-    </ul>
+    <!-- Game Icon Section -->
+    <div class="game-icon">
+        <img src="cc.jpg" alt="Game Icon"> <!-- Replace with your image URL -->
+        <div class="play-text">Play Now</div>
+    </div>
 </main>
 
 <footer>
